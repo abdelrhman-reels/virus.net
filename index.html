@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIRus.net | Cyber Cafe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar" id="top">
+    <div class="container nav-bar">
+      <a class="logo" href="#home" aria-label="VIRus.net home">VIRus.net</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#branches">Branches</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="pill" data-order-link target="_blank" rel="noopener">Order via X</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-visual"></div>
+      <div class="grid-overlay" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Fiber internet | RGB rigs | Cozy cafe</p>
+          <h1>VIRus.net</h1>
+          <p class="subtitle">High Speed | Pro Gaming | Ultimate Cafe Experience</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" data-order-link target="_blank" rel="noopener">Order via X (Twitter)</a>
+            <a class="btn btn-ghost" href="#contact">Chat on WhatsApp</a>
+          </div>
+          <div class="hero-tags">
+            <span class="chip">240Hz setups</span>
+            <span class="chip">Wi-Fi 6</span>
+            <span class="chip">Snack bar</span>
+            <span class="chip">Private booths</span>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Live cafe stats">
+          <p class="eyebrow">Live status</p>
+          <div class="stat">
+            <span>Ping</span>
+            <strong>8 ms avg</strong>
+          </div>
+          <div class="stat">
+            <span>Gaming rigs</span>
+            <strong>32 seats</strong>
+          </div>
+          <div class="stat">
+            <span>Open</span>
+            <strong>24/7</strong>
+          </div>
+          <div class="orbit" aria-hidden="true">
+            <span class="dot dot-a"></span>
+            <span class="dot dot-b"></span>
+            <span class="dot dot-c"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Menu</p>
+            <h2>Fuel your session</h2>
+            <p class="muted">Switch categories or search by name. Ordering stays on X while you play.</p>
+          </div>
+          <label class="search" for="menuSearch">
+            <input type="search" id="menuSearch" placeholder="Search drinks or waffles...">
+          </label>
+        </div>
+
+        <div class="tabs" role="tablist">
+          <button class="tab active" role="tab" aria-selected="true" data-cat="hot">Hot Drinks</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="cold">Cold Drinks</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="waffles">Waffles</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="milkshakes">Milkshakes</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="energy">Energy Drinks</button>
+          <button class="tab" role="tab" aria-selected="false" data-cat="healthy">Healthy Drinks</button>
+        </div>
+
+        <div id="menuGrid" class="cards-grid" aria-live="polite"></div>
+        <p class="note">Ordering is available via X (Twitter) in-store.</p>
+      </div>
+    </section>
+
+    <section class="section" id="branches">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Branches</p>
+            <h2>Find your hub</h2>
+            <p class="muted">Locations will open in Google Maps.</p>
+          </div>
+        </div>
+        <div class="branch-grid" id="branchGrid"></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-wrap">
+        <div class="contact-left">
+          <p class="eyebrow">Contact</p>
+          <h2>Ping us anytime</h2>
+          <p class="muted">Fastest replies on WhatsApp. No email needed.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://wa.me/201281898969" target="_blank" rel="noopener">WhatsApp +20 12 81898969</a>
+            <a class="btn btn-primary alt" href="https://wa.me/201020353245" target="_blank" rel="noopener">WhatsApp +201020353245</a>
+            <a class="btn btn-ghost" href="https://www.facebook.com/share/184kYVaXMD/" target="_blank" rel="noopener">Facebook Page</a>
+            <a class="btn btn-outline" data-order-link target="_blank" rel="noopener">Order via X (Twitter)</a>
+          </div>
+        </div>
+        <div class="contact-card" aria-label="Cafe quick facts">
+          <h3>Quick info</h3>
+          <ul>
+            <li><span>Open</span><strong>24/7</strong></li>
+            <li><span>Wi-Fi</span><strong>Fiber + LAN</strong></li>
+            <li><span>Perks</span><strong>Headsets, comfy booths</strong></li>
+            <li><span>Support</span><strong>On-site techs</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" aria-label="Back to top">^</button>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; VIRus.net</p>
+      <a class="link" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
